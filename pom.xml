@@ -9,11 +9,35 @@
     <relativePath />
   </parent>
 
-  <artifactId>google-usage-report</artifactId>
+  <artifactId>google-analytics-usage-reporter</artifactId>
   <packaging>hpi</packaging>
   <version>0.1-SNAPSHOT</version>
 
-  <name>Google Usage Reporting Plugin</name>
+  <name>Google Analytics Usage Reporter Plugin</name>
+  <description>
+    This plugin provides automatic reporting of Jenkins usage via Google Analytics.
+  </description>
+  <licenses>
+    <license>
+      <name>The Apache V2 License</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>astroilov</id>
+      <name>Andrey Stroilov</name>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}.git</developerConnection>
+    <url>http://github.com/jenkinsci/${project.artifactId}</url>
+    <tag>HEAD</tag>
+  </scm>
 
   <dependencies>
     <dependency>

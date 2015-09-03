@@ -1,4 +1,4 @@
-Google Usage Reporting Plugin
+Google Analytics Usage Reporter Plugin
 ====================
 
 This plugin provides automatic reporting of Jenkins usage to Google, via Google Analytics. This plugin is intended primarily for use with Google-provided Jenkins images, but is compatible with other Jenkins installations as well.
