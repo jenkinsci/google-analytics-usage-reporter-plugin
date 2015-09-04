@@ -32,6 +32,7 @@ import hudson.model.listeners.RunListener;
  */
 @Extension
 public class BuildReporter extends RunListener<Run<?, ?>> {
+  private static final String JENKINS_HOST_NAME = "virtual.jenkins";
   private static final String JENKINS_EVENT_TYPE = "jenkins";
   private static final String RUN_OBJECT_TYPE = "run";
   private static final String STARTED_EVENT = "started";
@@ -80,6 +81,7 @@ public class BuildReporter extends RunListener<Run<?, ?>> {
 
   private Event.Builder getCommonEventBuilder() {
     return Event.builder()
+        .setClientHostname(JENKINS_HOST_NAME)
         .setType(JENKINS_EVENT_TYPE)
         .setObjectType(RUN_OBJECT_TYPE)
         .setClientId(plugin.getClientId())
