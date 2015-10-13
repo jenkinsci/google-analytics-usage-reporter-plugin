@@ -22,6 +22,7 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/Google+Analytics+Usage+Reporter+Plugin</url>
 
   <developers>
     <developer>
